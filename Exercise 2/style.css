@@ -1,0 +1,14 @@
+div p:first-child{
+    color: red;
+    background-color: yellow;
+}
+div p:nth-child(4){
+    /* This Proprty is used for styling any paragrph of our choice  */
+    background-color: aqua  ;
+    color: hotpink;
+    font-style: italic;
+}
+p{
+    color: white;
+    background-color: blue;
+}
