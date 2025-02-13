@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Animation</title>
+    <style>
+        * {box-sizing: border-box;}
+        body {font-family: Arial, sans-serif;}
+        /* Style the container */
+        .container{
+            display: flex;
+            align-items: end;
+            height: 80vh;
+            width: 100vw;
+            background-color: rgb(20, 155, 234);
+        }
+        .box{
+            border-radius: 60px;
+            height: 8vh;
+            width: 4vw;
+            background-color: red;
+            position: relative;
+            left: 0%;
+            bottom: 0%;
+            /* animation: bounceinX 3s linear infinite; */
+            animation:bounceinX 3s linear infinite alternate ,bounceinY 1.5s ease-out infinite alternate;
+        }
+        @keyframes bounceinX{
+            from{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes bounceinY{
+            from{
+                bottom: 0%;
+            }
+            to{
+                bottom: 100%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

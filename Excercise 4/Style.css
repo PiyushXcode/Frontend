@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color1:  #0082d8; /* blue */
+    --hover-color1: #37a5f4; /* light blue */
+    --color2: rgb(104, 196, 104); /* light Green */
+    --hover-color2: Green; /* light blue */
+    --color3 : rgb(255, 141, 141); /* blue */
+    --hover-color3: rgb(179, 1, 1); /* light blue */
+    --color4 : rgb(141, 255, 240); /* blue */
+    --hover-color4: rgb(0, 190, 242); /* light blue */
+}
+nav{
+    background-color: lightyellow;
+}
+
+body{
+    background-color: lightcyan;
+    color: purple;
+}
+@media only Screen and (max-width:455px){
+ul{
+    flex-direction: column;
+}
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin: 3px;
+    padding: 3px;
+}
+.first:hover{
+    background-color: var(--hover-color1);
+}
+.Second:hover{
+    background-color: var(--hover-color2);
+}
+.third:hover{
+    background-color: var(--hover-color3);
+}
+.fourth:hover{
+    background-color: var(--hover-color4);
+}
+
+ul :nth-child(1)
+{
+   background-color: var(--color1);
+}
+ul :nth-child(2){
+    background-color: var(--color2);
+}
+ul :nth-child(3){
+    background-color:var(--color3);
+}
+ul :nth-child(4){
+    background-color: var(--color4);
+}

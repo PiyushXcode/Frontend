@@ -1,0 +1,32 @@
+.card{
+    display: flex;
+    border: 2px solid black;
+    width: 650px;
+    padding: 0px;
+    margin: 3px;
+}
+.image img{
+    width: 200px;
+    border: transparent;
+    border-radius: 6px;
+}
+.text h3,p{
+    padding: 2px 5px;
+}
+.image{
+    padding-top: 4px;
+    padding-left: 4px;
+    position: relative;
+}
+.capsule{
+    position: absolute;
+    right: 6px;
+    z-index: 10;
+    bottom: 7px;
+    background: #211717c5;
+    color: white;
+    font-size: 15px;
+    border: transparent;
+    border-radius: 2px;
+    padding: 2px;
+}
